@@ -20,3 +20,17 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.15 }
 );
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+const navLinks = document.querySelectorAll(".nav nav a");
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  },
+  { rootMargin: "-45% 0px -45% 0px" }
+);
+document.querySelectorAll("#home, .section").forEach((el) => sectionObserver.observe(el));

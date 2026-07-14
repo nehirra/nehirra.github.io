@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nehir Aras — Portfolio</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600&family=Twinkle+Star&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Space+Grotesk:wght@500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
       <span>Aras</span>
     </h1>
     <div class="hero-meta">
-      <span class="hero-role">Software Engineer in training</span>
+      <span class="hero-role">Software Engineer</span>
     </div>
     <div class="hero-links">
       <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -42,7 +43,7 @@
 <main>
 
   <section id="about" class="section">
-    <div class="section-card about-card reveal">
+    <div class="about-content reveal">
       <p class="hand-note about-note">"so… what's your thing?"</p>
       <h2 class="section-title">about<span class="title-dot">.</span></h2>
       <p class="about-lead">
@@ -53,11 +54,10 @@
         <strong>Design it, build it, measure it.</strong>
       </p>
       <div class="about-chips">
-        <span class="chip chip-1">Designs interfaces</span>
-        <span class="chip chip-2">Ships Swift apps</span>
-        <span class="chip chip-3">Reads the data</span>
+        <span class="chip chip-1">UI Design</span>
+        <span class="chip chip-2">Swift &amp; iOS</span>
+        <span class="chip chip-3">Data Analysis</span>
       </div>
-      <p class="hand-note about-aside">pick one? no thanks.</p>
     </div>
   </section>
 
@@ -66,36 +66,51 @@
       <p class="hand-note projects-note">a few things I've built</p>
       <h2 class="section-title">the work<span class="title-dot">.</span></h2>
     </div>
-    <div class="grid">
+    <div class="project-list">
 
-      <article class="card proj-card reveal" style="transition-delay: 0.05s">
-        <img src="images/thrones-hand-cards.png" alt="" class="proj-visual" aria-hidden="true">
-        <span class="card-badge badge-live">shipped · live</span>
-        <h3>Thrones of Glass</h3>
-        <p>A realtime multiplayer bluffing game (think Coup) — built end to end as a TypeScript monorepo: React&nbsp;19 client, Node/Express server, a shared game engine, and Socket.io keeping every player in sync. Live for anyone to play.</p>
-        <div class="tags"><span>React 19</span><span>TypeScript</span><span>Socket.io</span><span>Node/Express</span><span>Supabase</span></div>
-        <div class="card-links">
-          <a href="https://coup-client-d4yk.onrender.com/" target="_blank" rel="noopener">Play it live ↗</a>
+      <article class="project-row has-media project-featured reveal" style="transition-delay: 0.05s">
+        <div class="project-media">
+          <img src="images/tog-cover.jpg" alt="Illustrated royal court scene from Thrones of Glass" class="project-image">
+          <span class="media-shine" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <span class="card-badge badge-live"><span class="live-dot" aria-hidden="true"></span>shipped · live</span>
+          <h3>Thrones of Glass</h3>
+          <p><strong>Bluff your way to the throne.</strong> A realtime multiplayer bluffing game, built end to end and live for anyone to play.</p>
+          <div class="tags"><span>React 19</span><span>TypeScript</span><span>Socket.io</span><span>Node/Express</span><span>Supabase</span></div>
+          <div class="card-links">
+            <a href="https://coup-client-d4yk.onrender.com/" target="_blank" rel="noopener" class="btn-play">Play it live ↗</a>
+          </div>
         </div>
       </article>
 
-      <article class="card proj-card reveal" style="transition-delay: 0.15s">
-        <span class="card-badge badge-wip">startup · in progress</span>
-        <h3>Finance &amp; Investing App</h3>
-        <p>A fintech startup product helping people make smarter investing moves. I work on it as part of the team — turning finance features into something people actually want to open.</p>
-        <div class="tags"><span>iOS</span><span>Fintech</span><span>Startup</span></div>
-        <div class="card-links">
-          <span class="card-muted">private beta</span>
+      <article class="project-row reveal" style="transition-delay: 0.15s">
+        <div class="project-content">
+          <span class="card-badge badge-wip">startup · in progress</span>
+          <h3>Finance &amp; Investing App</h3>
+          <p>A fintech startup product helping people make smarter investing moves. I build the SwiftUI frontend — turning finance features into something people actually want to open.</p>
+          <div class="tags"><span>iOS</span><span>SwiftUI</span><span>Fintech</span><span>Startup</span></div>
+          <div class="card-links">
+            <span class="card-muted">private beta</span>
+          </div>
         </div>
       </article>
 
-      <article class="card proj-card reveal" style="transition-delay: 0.25s">
-        <span class="card-badge badge-design">design</span>
-        <h3>App UI &amp; Store Visuals</h3>
-        <p>Led UI design and crafted the App Store screenshots &amp; visuals for a mobile app — the first impression users get before they even tap "Get."</p>
-        <div class="tags"><span>UI Design</span><span>App Store</span><span>Visuals</span></div>
-        <div class="card-links">
-          <span class="card-muted">case study soon</span>
+      <article class="project-row has-media reveal" style="transition-delay: 0.25s">
+        <div class="project-gallery">
+          <img src="images/app-ui-recap.jpg" alt="App screen: monthly recap view" class="gallery-thumb">
+          <img src="images/app-ui-add-material.jpg" alt="App screen: add material form" class="gallery-thumb">
+          <img src="images/app-store-visual-1.svg" alt="App Store visual: Your Teaching Hub, Simplified" class="gallery-thumb">
+          <img src="images/app-store-visual-2.svg" alt="App Store visual: Stay on Top of Your Schedule" class="gallery-thumb">
+        </div>
+        <div class="project-content">
+          <span class="card-badge badge-design">design</span>
+          <h3>App UI &amp; Store Visuals</h3>
+          <p>Led UI design and App Store visuals for mobile apps. Sample screens shown below.</p>
+          <div class="tags"><span>UI Design</span><span>App Store</span><span>Visuals</span></div>
+          <div class="card-links">
+            <span class="card-muted">case study soon</span>
+          </div>
         </div>
       </article>
 
@@ -104,7 +119,7 @@
   </section>
 
   <section id="skills" class="section">
-    <div class="section-card skills-card reveal">
+    <div class="skills-body reveal">
       <p class="hand-note skills-note">what's in the toolbox</p>
       <h2 class="section-title">skills<span class="title-dot">.</span></h2>
 
@@ -135,20 +150,27 @@
             <li>Supabase / Postgres</li>
           </ul>
         </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Web &amp; Full-Stack</h3>
+          <ul class="skills-list">
+            <li>React &amp; TypeScript</li>
+            <li>Node.js / Express</li>
+            <li>Socket.io</li>
+          </ul>
+        </div>
       </div>
 
-      <p class="hand-note skills-aside">also dabbles in ↴</p>
+      <p class="hand-note skills-aside">Also familiar with</p>
       <div class="skills-extras">
         <span class="chip">Project Management</span>
         <span class="chip">Git &amp; GitHub</span>
-        <span class="chip">React &amp; TypeScript</span>
-        <span class="chip">Node.js</span>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section">
-    <div class="section-card contact-card reveal">
+    <div class="contact-body reveal">
       <p class="hand-note contact-note">Get in touch</p>
       <a href="mailto:nehirrass@gmail.com" class="contact-email">nehirrass@gmail.com</a>
     </div>
