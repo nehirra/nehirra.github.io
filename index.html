@@ -6,7 +6,7 @@
 <title>Nehir Aras — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600&family=Twinkle+Star&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,10 +26,9 @@
 <section id="home" class="hero">
   <div class="hero-inner">
     <h1 class="hero-name">
-      <span>NEHIR</span>
-      <span>ARAS</span>
+      <span>Nehir</span>
+      <span>Aras</span>
     </h1>
-    <p class="hero-tagline">CSE student building across design, iOS, and data — and shipping all three.</p>
     <div class="hero-meta">
       <span class="hero-role">Software Engineer in training</span>
     </div>
@@ -43,7 +42,7 @@
 <main>
 
   <section id="about" class="section">
-    <div class="section-card about-card">
+    <div class="section-card about-card reveal">
       <p class="hand-note about-note">"so… what's your thing?"</p>
       <h2 class="section-title">about<span class="title-dot">.</span></h2>
       <p class="about-lead">
@@ -69,7 +68,8 @@
     </div>
     <div class="grid">
 
-      <article class="card proj-card">
+      <article class="card proj-card reveal" style="transition-delay: 0.05s">
+        <img src="images/thrones-hand-cards.png" alt="" class="proj-visual" aria-hidden="true">
         <span class="card-badge badge-live">shipped · live</span>
         <h3>Thrones of Glass</h3>
         <p>A realtime multiplayer bluffing game (think Coup) — built end to end as a TypeScript monorepo: React&nbsp;19 client, Node/Express server, a shared game engine, and Socket.io keeping every player in sync. Live for anyone to play.</p>
@@ -79,7 +79,7 @@
         </div>
       </article>
 
-      <article class="card proj-card">
+      <article class="card proj-card reveal" style="transition-delay: 0.15s">
         <span class="card-badge badge-wip">startup · in progress</span>
         <h3>Finance &amp; Investing App</h3>
         <p>A fintech startup product helping people make smarter investing moves. I work on it as part of the team — turning finance features into something people actually want to open.</p>
@@ -89,7 +89,7 @@
         </div>
       </article>
 
-      <article class="card proj-card">
+      <article class="card proj-card reveal" style="transition-delay: 0.25s">
         <span class="card-badge badge-design">design</span>
         <h3>App UI &amp; Store Visuals</h3>
         <p>Led UI design and crafted the App Store screenshots &amp; visuals for a mobile app — the first impression users get before they even tap "Get."</p>
@@ -104,7 +104,7 @@
   </section>
 
   <section id="skills" class="section">
-    <div class="section-card skills-card">
+    <div class="section-card skills-card reveal">
       <p class="hand-note skills-note">what's in the toolbox</p>
       <h2 class="section-title">skills<span class="title-dot">.</span></h2>
 
@@ -148,7 +148,7 @@
   </section>
 
   <section id="contact" class="section">
-    <div class="section-card contact-card">
+    <div class="section-card contact-card reveal">
       <p class="hand-note contact-note">Get in touch</p>
       <a href="mailto:nehirrass@gmail.com" class="contact-email">nehirrass@gmail.com</a>
     </div>
