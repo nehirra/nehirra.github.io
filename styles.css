@@ -136,29 +136,32 @@ main {
   background: linear-gradient(
     177deg,
     #ffffff 0%,
-    #fce3f0 22%,
-    var(--pink) 48%,
-    var(--pink-deep) 78%,
-    #c25e94 100%
+    #d9a8c2 14%,
+    #a4527f 32%,
+    #7a3760 52%,
+    #5c2a48 78%,
+    #3d1a30 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   filter:
-    drop-shadow(0 1px 0 rgba(255,255,255,0.85))
-    drop-shadow(0 6px 10px rgba(194,94,148,0.45))
-    drop-shadow(0 14px 22px rgba(0,0,0,0.18));
+    drop-shadow(0 1px 0 rgba(255,255,255,0.95))
+    drop-shadow(0 2px 3px rgba(255,255,255,0.5))
+    drop-shadow(0 6px 10px rgba(194,94,148,0.5))
+    drop-shadow(0 14px 22px rgba(0,0,0,0.25));
 }
 
 .hero-name span:nth-child(2) {
   background: linear-gradient(
     177deg,
     #ffffff 0%,
-    #f8d2e6 20%,
-    var(--pink-deep) 50%,
-    #c25e94 82%,
-    #a44a7c 100%
+    #c690ac 12%,
+    #8a3f68 28%,
+    #5c2a48 52%,
+    #3d1a30 82%,
+    #241019 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
