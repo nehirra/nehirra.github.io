@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehir Aras — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Nehir Aras</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="hero-note">Welcome to my corner of the internet.</p>
+    <h1 class="hero-name">
+      <span>NEHIR</span>
+      <span>ARAS</span>
+    </h1>
+    <p class="hero-tagline">CSE student building across design, iOS, and data — and shipping all three.</p>
+    <div class="hero-meta">
+      <span class="hero-role">Software Engineer in training</span>
+    </div>
+    <div class="hero-links">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section id="about" class="section">
+    <div class="section-card about-card">
+      <p class="hand-note about-note">"so… what's your thing?"</p>
+      <h2 class="section-title">about<span class="title-dot">.</span></h2>
+      <p class="about-lead">
+        Third-year student at Akdeniz University, based in Ankara, Türkiye.
+      </p>
+      <p class="about-body">
+        One week it's pixel-perfect UI design. The next it's shipping Swift apps.
+        Then it's digging through a database to see what the data is actually saying.
+        <strong>It's one pipeline: design it, build it, measure it.</strong>
+      </p>
+      <div class="about-chips">
+        <span class="chip chip-1">Designs interfaces</span>
+        <span class="chip chip-2">Ships Swift apps</span>
+        <span class="chip chip-3">Reads the data</span>
+      </div>
+      <p class="hand-note about-aside">pick one? no thanks.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="projects-head">
+      <p class="hand-note projects-note">a few things I've built</p>
+      <h2 class="section-title">the work<span class="title-dot">.</span></h2>
+    </div>
+    <div class="grid">
+
+      <article class="card proj-card">
+        <span class="card-badge badge-live">shipped · live</span>
+        <h3>Thrones of Glass</h3>
+        <p>A realtime multiplayer bluffing game (think Coup) — built end to end as a TypeScript monorepo: React&nbsp;19 client, Node/Express server, a shared game engine, and Socket.io keeping every player in sync. Live for anyone to play.</p>
+        <div class="tags"><span>React 19</span><span>TypeScript</span><span>Socket.io</span><span>Node/Express</span><span>Supabase</span></div>
+        <div class="card-links">
+          <a href="https://coup-client-d4yk.onrender.com/" target="_blank" rel="noopener">Play it live ↗</a>
+        </div>
+      </article>
+
+      <article class="card proj-card">
+        <span class="card-badge badge-wip">startup · in progress</span>
+        <h3>Finance &amp; Investing App</h3>
+        <p>A fintech startup product helping people make smarter investing moves. I work on it as part of the team — turning finance features into something people actually want to open.</p>
+        <div class="tags"><span>iOS</span><span>Fintech</span><span>Startup</span></div>
+        <div class="card-links">
+          <span class="card-muted">private beta</span>
+        </div>
+      </article>
+
+      <article class="card proj-card">
+        <span class="card-badge badge-design">design</span>
+        <h3>App UI &amp; Store Visuals</h3>
+        <p>Led UI design and crafted the App Store screenshots &amp; visuals for a mobile app — the first impression users get before they even tap "Get."</p>
+        <div class="tags"><span>UI Design</span><span>App Store</span><span>Visuals</span></div>
+        <div class="card-links">
+          <span class="card-muted">case study soon</span>
+        </div>
+      </article>
+
+    </div>
+    <p class="hand-note projects-aside">More projects coming soon.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-card skills-card">
+      <p class="hand-note skills-note">what's in the toolbox</p>
+      <h2 class="section-title">skills<span class="title-dot">.</span></h2>
+
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h3 class="skills-group-title">UI Design</h3>
+          <ul class="skills-list">
+            <li>Figma</li>
+            <li>Prototyping &amp; Wireframing</li>
+            <li>App Store Visuals</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Swift &amp; iOS</h3>
+          <ul class="skills-list">
+            <li>Swift</li>
+            <li>SwiftUI</li>
+            <li>Xcode</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Databases &amp; Data Analysis</h3>
+          <ul class="skills-list">
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Supabase / Postgres</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="hand-note skills-aside">also dabbles in ↴</p>
+      <div class="skills-extras">
+        <span class="chip">Project Management</span>
+        <span class="chip">Git &amp; GitHub</span>
+        <span class="chip">React &amp; TypeScript</span>
+        <span class="chip">Node.js</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-card contact-card">
+      <p class="hand-note contact-note">Get in touch</p>
+      <h2 class="section-title">let's talk<span class="title-dot">.</span></h2>
+      <p class="contact-lead">
+        Got a project, an idea, or just want to say hi? My inbox is open.
+      </p>
+      <a href="mailto:nehirrass@gmail.com" class="contact-email">nehirrass@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Nehir Aras. Built with GitHub Pages.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
