@@ -336,7 +336,7 @@ main {
   transition: opacity 0.18s ease;
 }
 
-.project-row:first-child {
+.project-row:first-child:not(.project-featured) {
   border-top: none;
   padding-top: 0;
 }
