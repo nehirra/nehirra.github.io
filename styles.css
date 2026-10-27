@@ -505,6 +505,58 @@ main {
   .project-gallery { align-self: flex-start; }
 }
 
+.project-wide {
+  display: grid;
+  align-items: end;
+}
+
+.project-wide .project-media,
+.project-wide .project-content {
+  grid-area: 1 / 1;
+  width: 100%;
+}
+
+.project-wide .project-media {
+  box-shadow: 0 14px 34px rgba(0,0,0,0.28);
+}
+
+.project-wide .project-image {
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+.project-wide:hover .project-image { transform: scale(1.03); }
+
+.project-wide .project-content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 28px 30px;
+  border-radius: 16px;
+  background: linear-gradient(to right, rgba(10,10,24,0.92) 0%, rgba(10,10,24,0.78) 42%, rgba(10,10,24,0) 70%);
+  pointer-events: none;
+}
+
+.project-wide .project-content > * { max-width: 46%; }
+.project-wide .project-content .tags { margin-bottom: 4px; }
+
+.project-wide .project-content a { pointer-events: auto; }
+
+@media (max-width: 700px) {
+  .project-wide { display: flex; flex-direction: column; align-items: stretch; }
+  .project-wide .project-content {
+    padding: 0;
+    background: none;
+    pointer-events: auto;
+  }
+  .project-wide .project-content > * { max-width: none; }
+}
+
 .card-badge {
   display: inline-block;
   font-size: 0.7rem;
