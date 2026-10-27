@@ -510,6 +510,21 @@ main {
   align-items: end;
 }
 
+.project-wide > .card-links {
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 2;
+  margin: 0 26px 28px 0;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.project-wide > .card-links a.btn-play {
+  padding: 7px 16px;
+  font-size: 0.8rem;
+  box-shadow: 0 6px 14px rgba(217,160,184,0.2);
+}
+
 .project-wide .project-media,
 .project-wide .project-content {
   grid-area: 1 / 1;
@@ -538,7 +553,7 @@ main {
   align-items: flex-start;
   padding: 28px 30px;
   border-radius: 16px;
-  background: linear-gradient(to right, rgba(10,10,24,0.92) 0%, rgba(10,10,24,0.78) 42%, rgba(10,10,24,0) 70%);
+  background: linear-gradient(to top right, rgba(10,10,24,0.9) 0%, rgba(10,10,24,0.68) 35%, rgba(10,10,24,0) 62%);
   pointer-events: none;
 }
 
@@ -555,6 +570,7 @@ main {
     pointer-events: auto;
   }
   .project-wide .project-content > * { max-width: none; }
+  .project-wide > .card-links { margin: 0; }
 }
 
 .card-badge {
